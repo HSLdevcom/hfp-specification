@@ -1,0 +1,33 @@
+fail_fast = true
+exclude = "(?x)^(ai/|node_modules/)"
+
+[[repos]]
+repo = "builtin"
+hooks = [
+  { id = "end-of-file-fixer", priority = 10 },
+  { id = "fix-byte-order-marker", priority = 10 },
+  { id = "mixed-line-ending", priority = 10 },
+  { id = "trailing-whitespace", priority = 10 },
+  { id = "check-case-conflict", priority = 50 },
+  { id = "check-executables-have-shebangs", priority = 50 },
+  { id = "check-json", priority = 50 },
+  { id = "check-merge-conflict", priority = 50 },
+  { id = "check-symlinks", priority = 50 },
+  { id = "check-toml", priority = 50 },
+  { id = "check-yaml", priority = 50 },
+  { id = "detect-private-key", priority = 50 },
+]
+
+[[repos]]
+repo = "local"
+hooks = [
+  {
+    id = "project-check",
+    name = "run project checks",
+    language = "system",
+    entry = "npm run check",
+    priority = 100,
+    pass_filenames = false,
+    files = "^(draft/|[1-9][0-9]*-(0|[1-9][0-9]*)-(0|[1-9][0-9]*)/|src/|test/|scripts/|package(-lock)?\\.json$|tsconfig\\.json$|eslint\\.config\\.ts$|knip\\.json$|prek\\.toml$)",
+  },
+]

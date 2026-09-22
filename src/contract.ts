@@ -1,0 +1,26 @@
+export const EVENT_TYPES = [
+  "VP",
+  "DUE",
+  "ARR",
+  "ARS",
+  "PDE",
+  "DEP",
+  "PAS",
+  "WAIT",
+  "STP",
+  "DOR",
+  "DOO",
+  "DOC",
+  "TLR",
+  "TLA",
+  "DA",
+  "DOUT",
+  "BA",
+  "BOUT",
+  "VJA",
+  "VJOUT",
+  "EVCHS",
+  "EVCHE",
+] as const;
+
+export type EventType = (typeof EVENT_TYPES)[number];

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "3-0-0",
+  "algorithm": "sha256",
+  "files": {
+    "README.md": "09b5874a072a04962ca4c27a5e78390c07da0afccdba15be1f854efe1531ae00",
+    "examples/cases.json": "db194749a7c45115e781064a9f6883819b9d770edbe524c2b4db6e483f5c8615",
+    "examples/invalid-schema/multiple-events.json": "215947d38180cc7ca14d687fd11ff2e8244f2c46737c1e4e39a180cc882c20d6",
+    "examples/invalid-schema/occupancy-out-of-range.json": "1c7f12dbb09b95f14afc522442cfff969e73a54662836b3b9fa6b88ad6c822ba",
+    "examples/invalid-schema/string-stop.json": "f0f03c97067aa64ad468bd64e83ac491086cb7e8a95c113564b78562de2dd157",
+    "examples/invalid-schema/unknown-property.json": "80c971582822e6d38487de29d06d4c6091d83435cb9e0658761bf6862e8032b2",
+    "examples/invalid-schema/vja-nonzero-odometer.json": "33f77f70eec1cf4e19b0a426a4547d7541d6b9c6ca33e2e3c34c61239d810039",
+    "examples/invalid-schema/wrong-version.json": "c77132eda61ee02a6a297ef3acb1504c2eaa1354d6a49ca89be52e8f2da1139e",
+    "examples/valid/da-null-telemetry.json": "565b33988760b1de326702a5389b7dcb168e59ed1e4193f72ba60d741e51bb68",
+    "examples/valid/tlr-request.json": "88f5a1143ffb5d0aa2b17a038353592c0ad5b785e7a211ca06bbcd021eb73def",
+    "examples/valid/tlr-suppressed.json": "9af51c2efc0a9092ba0f112ded6e8fa0c89677e7076a85d92e1c0c9c156d7950",
+    "examples/valid/vja-reset-odometer.json": "7aa897ffce5695497c955447de3b038d24879dbaf7fefd8c6f119c94b22b407e",
+    "examples/valid/vp.json": "03dd4ce0914e2e2f9896156ad840295700fbf7e0f1143435db83a908dec2a50a",
+    "hfp.schema.json": "b37c08832622926b4bf83f080194ae0ad4e72b1d69ffd187332bc1467c617b47",
+    "modules/hfp.source.schema.json": "c1febf4fce8be8baf09033d57c6d4c5911d19b9602b8047300ad38744df7e818",
+    "release-evidence.json": "7e75fc556d0df7bedac6bc3b9301ccb2c02483c98b744de3c0c791eb3d89b730"
+  }
+}

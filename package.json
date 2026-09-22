@@ -1,0 +1,40 @@
+{
+  "name": "@hsl/hfp-specification",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Versioned specification and validation tools for HSL high-frequency positioning messages",
+  "license": "CC0-1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.15 <25",
+    "npm": ">=12 <13"
+  },
+  "packageManager": "npm@12.0.1",
+  "scripts": {
+    "bundle": "node src/bundle.ts",
+    "bundle:check": "node src/bundle.ts --check",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run deadcode && npm run bundle:check && npm test && npm run validate:examples && npm run validate:independent",
+    "deadcode": "knip",
+    "format": "prettier --write . --ignore-path .prettierignore",
+    "format:check": "prettier --check . --ignore-path .prettierignore",
+    "lint": "eslint .",
+    "test": "node --test test/**/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "validate:examples": "node src/validate-examples.ts",
+    "validate:independent": "uv run --no-project --with jsonschema==4.26.0 python scripts/validate-independent.py"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.13.6",
+    "eslint": "10.11.0",
+    "fast-check": "4.10.2",
+    "knip": "6.37.0",
+    "prettier": "3.9.8",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.1"
+  }
+}

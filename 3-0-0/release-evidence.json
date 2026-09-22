@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "3-0-0",
+  "schemaId": "https://hsl.fi/schema/hfp/3-0-0/hfp.schema.json",
+  "generatedAt": "2026-10-01T21:39:04.091Z",
+  "promotion": {
+    "sourceCommit": "00b586f608cb04f2811a9c46d068f273ffce2909",
+    "sourceDirectory": "draft",
+    "targetDirectory": "3-0-0",
+    "classification": "initial HFP v3 payload contract",
+    "payloadRulesPreservedExceptExactVersion": true
+  },
+  "verification": {
+    "promotedPublicChecks": {
+      "command": "HFP_CONTRACT_DIRECTORY=3-0-0 npm run check",
+      "passed": true,
+      "behavioralTests": 26,
+      "ajvExampleCases": 11,
+      "independentExampleCases": 11
+    },
+    "documentationLinks": {
+      "localLinksAndAnchors": 29,
+      "passed": true
+    },
+    "developmentMarkerAbsentFromVersionDirectory": true,
+    "prePromotionPublicChecks": {
+      "command": "npm run check",
+      "sourceCommit": "00b586f608cb04f2811a9c46d068f273ffce2909",
+      "passed": true,
+      "behavioralAndStructuralTests": 30,
+      "ajvExampleCases": 11,
+      "independentExampleCases": 11
+    },
+    "payloadRuleComparison": {
+      "passed": true,
+      "excludedIdentityAnnotations": [
+        "$id",
+        "title",
+        "description",
+        "schemaVersion description"
+      ],
+      "changedConstraint": "schemaVersion const"
+    },
+    "producerReadmeCommand": {
+      "passed": true,
+      "defaultContract": "3-0-0"
+    },
+    "nodeSmoke": {
+      "schemaVersion": "3-0-0",
+      "schemaId": "https://hsl.fi/schema/hfp/3-0-0/hfp.schema.json",
+      "valid_wire_and_topic": true,
+      "rejected_version_cases": 8,
+      "topic_specific_requiredness": true,
+      "unsupported_context_rejected": true
+    },
+    "independentPythonSmoke": {
+      "schemaVersion": "3-0-0",
+      "local_registry": true,
+      "format_assertions": true,
+      "wire_and_topic_valid": true,
+      "rejected_version_cases": 8,
+      "topic_specific_requiredness": true
+    }
+  },
+  "scope": {
+    "verified": "Local payload and supplied-topic-context validation with synthetic examples; release identity and exact-version boundaries.",
+    "historicalCompatibility": "No compatibility claim for raw HFP v2 captures or an approved historical conforming corpus.",
+    "mqttGrammarAndSemantics": "Full MQTT grammar and identifier agreement, calendar and timestamp arithmetic, reference-data existence, event triggers, state transitions, delivery behavior, and clock synchronization require separate operational checks.",
+    "interoperability": "No real producer/consumer interoperability or production rollout exercised.",
+    "publication": "No annotated tag, GitHub release, or SchemaStore publication created by this promotion."
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "vp-valid",
+    "payload": "valid/vp.json",
+    "valid": true
+  },
+  {
+    "id": "vja-valid-reset-odometer",
+    "payload": "valid/vja-reset-odometer.json",
+    "valid": true
+  },
+  {
+    "id": "invalid-vja-nonzero-odometer",
+    "payload": "invalid-schema/vja-nonzero-odometer.json",
+    "valid": false
+  },
+  {
+    "id": "da-valid-null-telemetry",
+    "payload": "valid/da-null-telemetry.json",
+    "valid": true
+  },
+  {
+    "id": "tlr-valid-request",
+    "payload": "valid/tlr-request.json",
+    "valid": true
+  },
+  {
+    "id": "tlr-valid-suppressed",
+    "payload": "valid/tlr-suppressed.json",
+    "valid": true
+  },
+  {
+    "id": "invalid-other-contract-version",
+    "payload": "invalid-schema/wrong-version.json",
+    "valid": false
+  },
+  {
+    "id": "invalid-string-stop",
+    "payload": "invalid-schema/string-stop.json",
+    "valid": false
+  },
+  {
+    "id": "invalid-unknown-property",
+    "payload": "invalid-schema/unknown-property.json",
+    "valid": false
+  },
+  {
+    "id": "invalid-occupancy-out-of-range",
+    "payload": "invalid-schema/occupancy-out-of-range.json",
+    "valid": false
+  },
+  {
+    "id": "invalid-multiple-events",
+    "payload": "invalid-schema/multiple-events.json",
+    "valid": false
+  }
+]

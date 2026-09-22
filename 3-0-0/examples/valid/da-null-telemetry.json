@@ -1,0 +1,18 @@
+{
+  "DA": {
+    "schemaVersion": "3-0-0",
+    "oper": 12,
+    "veh": 34,
+    "tst": "2026-09-15T08:01:00.000Z",
+    "tsi": 1789459260,
+    "spd": null,
+    "hdg": null,
+    "lat": null,
+    "long": null,
+    "acc": null,
+    "odo": null,
+    "drst": null,
+    "loc": "N/A",
+    "dr-type": 1
+  }
+}
